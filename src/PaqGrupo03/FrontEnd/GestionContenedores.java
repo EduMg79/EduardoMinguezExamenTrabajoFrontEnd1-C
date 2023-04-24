@@ -17,6 +17,7 @@ public class GestionContenedores extends JFrame {
 
     public GestionContenedores(){
         setTitle("Contenedores ");
+
         setSize(800,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
