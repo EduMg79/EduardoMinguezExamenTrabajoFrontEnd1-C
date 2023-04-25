@@ -315,6 +315,22 @@ public class GestionContenedores extends JFrame {
 
         });
 
+        MasPeso.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int peso=Integer.parseInt(txtCmas.getText());
+                int nhub;
+                if (Hub1.isSelected()){
+                    nhub=0;
+                } else if (hub2.isSelected()) {
+                    nhub=1;
+
+                }
+                else nhub=2;
+                GestionContenedores3 gestionContenedores3=new GestionContenedores3(p.masPeso(nhub,peso));
+
+            }
+        });
     }
 
 
@@ -354,6 +370,8 @@ public class GestionContenedores extends JFrame {
     private JRadioButton Hub1;
     private JRadioButton hub2;
     private JRadioButton Hub3;
+    private JButton MasPeso;
+    private JTextField txtCmas;
 
     Puerto p;
 
